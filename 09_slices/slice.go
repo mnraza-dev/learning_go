@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"slices"
+)
 
 func main() {
 
@@ -34,8 +37,16 @@ func main() {
 	// 	fmt.Println("Capacity of new slice:", cap(newNums))
 
 	// slice operators
-	var nums = []int{1, 2, 3, 4}
-	fmt.Println("Original Slice:", nums)
-	fmt.Println("Slice from index 0 to 2:", nums[0:2]) // [1 2 ]
+	// var nums = []int{1, 2, 3, 4}
+	// fmt.Println("Original Slice:", nums)
+	// fmt.Println("Slice from index 0 to 2:", nums[0:2]) // [1 2 ]
+	// fmt.Println( nums[:2]) 
+	// fmt.Println( nums[:]) 
+	// fmt.Println( nums[1:]) 
+	// fmt.Println( nums[1:3]) 
+
+	nums1 := []int{1, 2, 3, 4, 5}
+	nums2 := []int{6, 7, 8, 9, 10}
+	fmt.Println(slices.Equal(nums1,nums2))
 
 }
