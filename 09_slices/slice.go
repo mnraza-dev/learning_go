@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"slices"
 )
 
 func main() {
@@ -40,13 +39,22 @@ func main() {
 	// var nums = []int{1, 2, 3, 4}
 	// fmt.Println("Original Slice:", nums)
 	// fmt.Println("Slice from index 0 to 2:", nums[0:2]) // [1 2 ]
-	// fmt.Println( nums[:2]) 
-	// fmt.Println( nums[:]) 
-	// fmt.Println( nums[1:]) 
-	// fmt.Println( nums[1:3]) 
+	// fmt.Println( nums[:2])
+	// fmt.Println( nums[:])
+	// fmt.Println( nums[1:])
+	// fmt.Println( nums[1:3])
 
-	nums1 := []int{1, 2, 3, 4, 5}
-	nums2 := []int{6, 7, 8, 9, 10}
-	fmt.Println(slices.Equal(nums1,nums2))
+	// slices methods from "slices" package
+	// nums1 := []int{1, 2, 3, 4, 5}
+	// nums2 := []int{6, 7, 8, 9, 10}
+	// fmt.Println(slices.Equal(nums1,nums2))
+
+	// 2D slices
+	nums := [][]int{
+		{1, 2, 3},
+		{7, 8, 9},
+	}
+	fmt.Println("2D Slice:", nums)
+	fmt.Println("Element at row 1, column 2:", nums[1][0]) 
 
 }
