@@ -39,7 +39,7 @@ func main() {
 	// }
 
 	// range keyword
-	// for i := range 11 {
-	// 	fmt.Println(i)
-	// }
+	for i := range 11 {
+		fmt.Println(i)
+	}
 }
